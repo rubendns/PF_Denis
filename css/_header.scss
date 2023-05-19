@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    flex-direction: column;
+
+    .encabezado {
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    h1 {
+        font-weight: lighter;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
+    .portada {
+        display: block;
+    }
+}
+
+.barra {
+    width: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li a {
+        width: 20vh;
+        height: 25px;
+        text-decoration: none;
+        background-color: hsl(150, 89%, 82%);
+        /* background-color: rgb(247, 247, 247); */
+        /* color: hsl(0, 22%, 93%); */
+        box-shadow: 0 0 5px blue;
+        padding: 1px 3px 1px 3px;
+        font-size: 16px;
+    }
+
+    li:hover a {
+        background: #333;
+        color: #ffffff;
+    }
+}

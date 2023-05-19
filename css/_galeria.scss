@@ -1,0 +1,53 @@
+.galeria {
+    width: 100%;
+    max-height: auto;
+    background-color: springgreen;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 200px);
+    padding: 5px;
+    grid-gap: 5px;
+
+    .foto {
+        border: 3px solid #333;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .foto1 {
+        background-image: url(../img/foto1.jpg);
+    }
+
+    .foto2 {
+        background-image: url(../img/foto2.jpg);
+    }
+
+    .foto3 {
+        background-image: url(../img/foto3.jpg);
+    }
+
+    .foto4 {
+        background-image: url(../img/foto4.jpg);
+    }
+
+    .foto5 {
+        background-image: url(../img/foto5.jpg);
+    }
+
+    .foto6 {
+        background-image: url(../img/foto6.jpg);
+    }
+
+    .foto7 {
+        background-image: url(../img/foto7.jpg);
+    }
+
+    .foto8 {
+        background-image: url(../img/foto8.jpg);
+    }
+
+    .foto9 {
+        background-image: url(../img/foto9.jpg);
+    }
+
+}
