@@ -338,6 +338,23 @@ template {
   display: none;
 }
 
+html {
+  font-size: 55%;
+}
+html *,
+html *::before,
+html *::after {
+  box-sizing: border-box;
+}
+html .contenedor {
+  text-align: center;
+  max-width: 90%;
+  height: auto;
+  width: auto;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -345,9 +362,6 @@ header {
 header .encabezado {
   display: flex;
   margin-top: 1rem;
-}
-header h1 {
-  font-weight: lighter;
 }
 header span {
   font-weight: bold;
@@ -379,6 +393,22 @@ header .portada {
   color: #ffffff;
 }
 
+body {
+  font-size: 19px;
+  font-family: "Raleway", sans-serif;
+  color: #333333;
+  background-color: #059c0d;
+  display: block;
+}
+body h2 {
+  font-size: 2.5rem;
+  text-shadow: 0 0 8px;
+}
+body h1,
+body h2 {
+  text-align: center;
+}
+
 footer {
   display: flex;
   background-color: hsl(150, 71%, 30%);
@@ -396,6 +426,32 @@ footer .redes a {
 footer .texto {
   text-align: center;
   font-size: 16px;
+}
+
+.frente {
+  background-image: url(../img/frente.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.historia {
+  width: 300px;
+  height: auto;
+  text-align: center;
+}
+
+.actividad {
+  max-width: 120rem;
+  margin: auto;
+  /* .imagenes {
+      display: block;
+  } */
+}
+.actividad .imagen {
+  width: 280px;
+  height: auto;
 }
 
 .galeria {
@@ -483,19 +539,11 @@ footer .texto {
   display: block;
 }
 
-.actividad {
-  max-width: 120rem;
-  margin: auto;
-  /* .imagenes {
-      display: block;
-  } */
-}
-.actividad .imagen {
-  width: 280px;
-  height: auto;
-}
-
 @media only screen and (max-width: 479px) {
+  h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 8px;
+  }
   .frente {
     min-height: 50vh;
   }
@@ -512,6 +560,7 @@ footer .texto {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   h1 {
     font-size: 4.5rem;
+    text-shadow: 0 0 9px;
   }
   .frente {
     min-height: 60vh;
@@ -530,7 +579,7 @@ footer .texto {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   h1 {
     font-size: 5rem;
-    text-shadow: 0 0 9px;
+    text-shadow: 0 0 10px;
   }
   .frente {
     min-height: 70vh;
@@ -585,7 +634,7 @@ footer .texto {
 @media only screen and (min-width: 1024px) {
   h1 {
     font-size: 5.5rem;
-    text-shadow: 0 0 10px;
+    text-shadow: 0 0 11px;
   }
   .barra li a {
     width: 20vh;
@@ -597,75 +646,4 @@ footer .texto {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 300px);
   }
-}
-html {
-  font-size: 55%;
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 19px;
-  font-family: "Raleway", sans-serif;
-  color: #333333;
-  background-color: #059c0d;
-  display: block;
-}
-
-.contenedor {
-  text-align: center;
-  max-width: 90%;
-  height: auto;
-  width: auto;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.fondo {
-  /* width: auto; */
-  height: 30px;
-}
-
-h1 {
-  font-size: 4rem;
-  text-shadow: 0 0 8px;
-}
-
-h2 {
-  font-size: 2.5rem;
-  text-shadow: 0 0 8px;
-}
-
-h1,
-h2 {
-  text-align: center;
-}
-
-.frente {
-  background-image: url(../img/frente.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
-.historia {
-  width: 300px;
-  height: auto;
-  text-align: center;
-}
-
-.main {
-  height: 75vh;
-  display: flex;
-  background-color: #5dbd62;
-  text-align: center;
-  height: auto;
-  display: flex;
-  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

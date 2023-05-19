@@ -1,4 +1,10 @@
 @media only screen and (max-width:479px) {
+    h1 {
+        // font-weight: lighter;
+        font-size: 4rem;
+        text-shadow: 0 0 8px;
+    }
+
     .frente {
         min-height: 50vh;
     }
@@ -17,7 +23,9 @@
 
 @media only screen and (min-width:480px) and (max-width: 767px) {
     h1 {
+        // font-weight: lighter;
         font-size: 4.5rem;
+        text-shadow: 0 0 9px;
     }
 
     .frente {
@@ -39,8 +47,9 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     h1 {
+        // font-weight: lighter;
         font-size: 5rem;
-        text-shadow: 0 0 9px;
+        text-shadow: 0 0 10px;
     }
 
     .frente {
@@ -108,7 +117,7 @@
 @media only screen and (min-width:1024px) {
     h1 {
         font-size: 5.5rem;
-        text-shadow: 0 0 10px;
+        text-shadow: 0 0 11px;
     }
 
     .barra li a {
