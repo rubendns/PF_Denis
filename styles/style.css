@@ -400,6 +400,22 @@ body {
   background-color: #059c0d;
   display: block;
 }
+body span {
+  font-size: 3rem;
+  text-shadow: 0 0 9px;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body h2 {
   font-size: 2.5rem;
   text-shadow: 0 0 8px;
@@ -445,9 +461,14 @@ footer .texto {
 .actividad {
   max-width: 120rem;
   margin: auto;
+  display: block;
+  transform-origin: bottom center;
   /* .imagenes {
       display: block;
   } */
+}
+.actividad .actividad:hover {
+  transform: scale(2);
 }
 .actividad .imagen {
   width: 280px;
@@ -455,8 +476,8 @@ footer .texto {
 }
 
 .galeria {
-  width: 100%;
-  max-height: auto;
+  max-width: 110rem;
+  margin: auto;
   background-color: springgreen;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
