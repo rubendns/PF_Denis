@@ -378,7 +378,7 @@ header .portada {
   align-items: center;
 }
 .barra li a {
-  width: 20vh;
+  width: 15vh;
   height: 25px;
   text-decoration: none;
   background-color: hsl(150, 89%, 82%);
@@ -462,17 +462,17 @@ footer .texto {
   max-width: 120rem;
   margin: auto;
   display: block;
-  transform-origin: bottom center;
   /* .imagenes {
       display: block;
   } */
 }
-.actividad .actividad:hover {
-  transform: scale(2);
-}
 .actividad .imagen {
   width: 280px;
   height: auto;
+}
+.actividad .imagen:hover {
+  transition: all 1s;
+  transform: scale(1.1);
 }
 
 .galeria {
@@ -489,6 +489,10 @@ footer .texto {
   border: 3px solid #333;
   background-size: cover;
   background-position: center;
+  transition: all 1s;
+}
+.galeria .foto:hover {
+  transform: scale(1.1);
 }
 .galeria .foto1 {
   background-image: url(../img/foto1.jpg);

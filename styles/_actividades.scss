@@ -1,18 +1,16 @@
 .actividad {
     max-width: 120rem;
     margin: auto;
-
     display: block;
-    transform-origin: bottom center;
-
-
-    .actividad:hover {
-        transform: scale(2);
-    }
 
     .imagen {
         width: 280px;
         height: auto;
+    }
+
+    .imagen:hover {
+        transition: all 1s;
+        transform: scale(1.1);
     }
 
     /* .imagenes {
