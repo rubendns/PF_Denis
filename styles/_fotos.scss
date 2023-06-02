@@ -3,8 +3,6 @@
     margin: auto;
     background-color: springgreen;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 200px);
     padding: 5px;
     grid-gap: 5px;
 
@@ -14,6 +12,7 @@
         background-size: cover;
         background-position: center;
         transition: all 1s;
+
     }
 
     .foto:hover {
@@ -22,6 +21,7 @@
 
     .foto1 {
         background-image: url(../img/foto1.jpg);
+        object-fit: none;
     }
 
     .foto2 {

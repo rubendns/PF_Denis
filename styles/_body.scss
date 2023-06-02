@@ -5,12 +5,12 @@ body {
     background-color: #059c0d;
     display: block;
 
-    span{
+    span {
         font-size: 3rem;
         text-shadow: 0 0 9px;
         animation-duration: 2s;
         animation-name: aparecer;
-        animation-delay: 2s;
+        animation-delay: 0.5s;
         animation-iteration-count: infinite;
     }
 
